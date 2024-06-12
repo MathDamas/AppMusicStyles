@@ -19,7 +19,7 @@ class EstilosPag extends StatefulWidget {
 
 class EstilosPag2 extends State<EstilosPag> {
   EstilosMusc f =
-      const EstilosMusc('img/funk3.avif', 'Funk', '01/01/2001', 'MC sla');
+      const EstilosMusc('img/funk2.jpg', 'Funk', '01/01/2001', 'MC sla');
   EstilosMusc h = const EstilosMusc('', 'HipHop', '69/69/6969', 'Deide Costas');
   EstilosMusc s =
       const EstilosMusc('', 'Samba', '11/09/2001', 'Zeca Pagodinho');

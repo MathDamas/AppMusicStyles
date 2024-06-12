@@ -1,7 +1,5 @@
 // ignore: file_names
 
-
-
 import 'package:app_flutter_music_styles/classeEstilos.dart';
 import 'package:flutter/material.dart';
 
@@ -24,7 +22,7 @@ class TesteDados extends StatelessWidget {
       ),
       body: Container(
         alignment: Alignment.center,
-        decoration: BoxDecoration(
+        decoration:  BoxDecoration(
           image: DecorationImage(
             image: AssetImage(
               e.imagemMusc,
@@ -32,7 +30,7 @@ class TesteDados extends StatelessWidget {
             fit: BoxFit.fill,
           ),
         ),
-        child: Column( 
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(

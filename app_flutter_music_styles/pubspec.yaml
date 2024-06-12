@@ -18,17 +18,5 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-  - img/funk1.jpg
-  - img/funk2.jpg
-  - img/hiphop1.jpg
-  - img/hiphop2.jpg
-  - img/samba1.jpg
-  - img/samba2.jpg
-  - img/trap1.jpg
-  - img/trap2.jpg
-  - img/rock1.jpg
-  - img/rock2.jpg
-  - img/historiaSP.jpg
-  - img/niverSP.jpg
-  - img/funktela.png
-  - img/funk3.avif
+  - img/
+ 
