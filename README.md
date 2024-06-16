@@ -22,3 +22,8 @@
 ### Link para acesso da wiki:
 
 * https://github.com/MathDamas/AppMusicStyles/wiki
+* https://github.com/MathDamas/AppMusicStyles/wiki/Demonstra%C3%A7%C3%A3o-do-prot%C3%B3tipo
+* https://github.com/MathDamas/AppMusicStyles/wiki/Descri%C3%A7%C3%A3o-detalhada-do-projeto
+* https://github.com/MathDamas/AppMusicStyles/wiki/Desenvolvimento-do-APP
+* https://github.com/MathDamas/AppMusicStyles/wiki/Indica%C3%A7%C3%A3o-das-telas
+* https://github.com/MathDamas/AppMusicStyles/wiki/Widget's-que-ser%C3%A3o-utilizados
