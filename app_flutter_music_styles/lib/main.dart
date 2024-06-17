@@ -12,61 +12,54 @@ void main() {
 
 // Define a classe MainApp
 class MainApp extends StatelessWidget {
-  // Construtor da classe MainApp, com um parâmetro super.key
   const MainApp({super.key});
 
-  // Sobrescreve o método build que constrói a interface do usuário
   @override
   Widget build(BuildContext context) {
-    // Retorna um MaterialApp, que é o widget raiz do aplicativo
     return MaterialApp(
-      // Define a página inicial do aplicativo como um Scaffold
       home: Scaffold(
-        // Define a cor de fundo do Scaffold como preto
-        backgroundColor: Colors.black,
-        // Define uma AppBar na parte superior do Scaffold
+        // Remova a cor de fundo definida no Scaffold
+        // backgroundColor: Colors.black,
         appBar: AppBar(
-          // Define o título da AppBar com um texto constante
           title: const Text('Bem vindo ao App!'),
-          // Define a cor do texto da AppBar como branco
           foregroundColor: Colors.white,
-          // Define a cor de fundo da AppBar
-          backgroundColor: Color.fromARGB(255, 81, 81, 81),
+          backgroundColor: const Color.fromARGB(255, 81, 81, 81),
         ),
-        // Corpo do Scaffold, centraliza o widget filho
-        body: Center(
-          // Define um SizedBox para controlar as dimensões do botão
-          child: SizedBox(
-            width: 200, // Largura do botão
-            height: 200, // Altura do botão
-            // Define um ElevatedButton dentro do SizedBox
-            child: ElevatedButton(
-              // Define o estilo do ElevatedButton
-              style: ElevatedButton.styleFrom(
-                // Cor do texto do botão
-                foregroundColor: Colors.white,
-                // Cor de fundo do botão
-                backgroundColor: const Color.fromARGB(82, 194, 209, 0),
-                // Define a forma do botão com bordas arredondadas
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(70),
-                ),
-                // Define o estilo do texto do botão
-                textStyle: const TextStyle(
-                  fontSize: 20, // Tamanho da fonte do texto
+        body: Stack(
+          children: [
+            // Adiciona a imagem de fundo
+            Positioned.fill(
+              child: Image.asset(
+                'img/inicio.gif', // Caminho da imagem na pasta assets
+                fit: BoxFit.cover, // Ajusta a imagem para cobrir toda a tela
+              ),
+            ),
+            // Adiciona o conteúdo acima da imagem de fundo
+            Center(
+              child: SizedBox(
+                width: 200,
+                height: 200,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    foregroundColor: Colors.white,
+                    backgroundColor: const Color.fromARGB(82, 194, 209, 0),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(70),
+                    ),
+                    textStyle: const TextStyle(
+                      fontSize: 20,
+                    ),
+                  ),
+                  child: const Text('Conhecer'),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(builder: (context) => MenuPag()),
+                    );
+                  },
                 ),
               ),
-              // Texto do botão
-              child: const Text('Conhecer'),
-              // Define a ação ao pressionar o botão
-              onPressed: () {
-                // Navega para a página MenuPag e substitui a rota atual
-                Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(builder: (context) => MenuPag()),
-                );
-              },
             ),
-          ),
+          ],
         ),
       ),
     );

@@ -19,12 +19,12 @@ class EstilosPag extends StatefulWidget {
 
 class EstilosPag2 extends State<EstilosPag> {
   EstilosMusc f =
-      const EstilosMusc('img/funk2.jpg', 'Funk', '01/01/2001', 'MC sla');
-  EstilosMusc h = const EstilosMusc('', 'HipHop', '69/69/6969', 'Deide Costas');
+      const EstilosMusc('', 'Funk Brasileiro', 'Surgimento: Final da década de 60', 'Cantores: Anitta, Ludmilla e Kevinho');
+  EstilosMusc h = const EstilosMusc('', 'HipHop Brasileiro', 'Surgimento: Em 1988', 'Cantores: Emicida, Rael e Karol Conká');
   EstilosMusc s =
-      const EstilosMusc('', 'Samba', '11/09/2001', 'Zeca Pagodinho');
-  EstilosMusc t = const EstilosMusc('', 'Trap', '06/05/2021', 'MatueKKKKKK');
-  EstilosMusc r = const EstilosMusc('', 'Rock', '11/07/2006', 'Matheus Gama');
+      const EstilosMusc('', 'Samba', 'Surgimento: Início do Século 20', 'Cantores: Martinho da Vila, Alcione e Zeca Pagodinho');
+  EstilosMusc t = const EstilosMusc('', 'Trap Brasileiro', 'Surgimento: Em 1999', 'Cantores: Matuê, Sidoka e Delacruz');
+  EstilosMusc r = const EstilosMusc('', 'Rock Brasileiro', 'Surgimento: Década de 59', 'Cantores: Legião Urbana, Titâs e Pitty');
 
 // Define a classe EstilosPag que herda de StatelessWidget
 
