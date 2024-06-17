@@ -12,7 +12,7 @@ class historiaPag extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.black,
         appBar: AppBar(
-          title: const Text('HIstória de São Paulo'),
+          title: const Text('História de São Paulo'),
           foregroundColor: Colors.white,
           backgroundColor: Color.fromARGB(255, 81, 81, 81),
         ),
