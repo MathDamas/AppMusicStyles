@@ -6,6 +6,8 @@ void main() {
 }
 
 class niverPag extends StatelessWidget {
+  const niverPag({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,7 +16,7 @@ class niverPag extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Aniversário de São Paulo'),
           foregroundColor: Colors.white,
-          backgroundColor: Color.fromARGB(255, 81, 81, 81),
+          backgroundColor: const Color.fromARGB(255, 81, 81, 81),
         ),
         body: Center(
           child: Column(
@@ -29,9 +31,11 @@ class niverPag extends StatelessWidget {
               const Text(
                 'São Paulo, a cidade que nunca dorme, está pronta para celebrar mais um aniversário. No dia 25 de janeiro, as ruas se enchem de cores e alegria para comemorar o dia em que essa metrópole vibrante foi fundada em 1554. Os paulistanos se unem nessa data especial para celebrar a história, os valores e as conquistas dessa grande cidade. São Paulo é conhecida por sua rica cultura, abrigando museus, teatros e galerias de arte renomadas.',
                 style: TextStyle(fontSize: 20, fontFamily: 'Times New Roman', color: Color.fromARGB(255, 255, 255, 255)),
+                textAlign: TextAlign.justify,
+                
               ),
               const SizedBox(height: 20),
-              ElevatedButton(
+        FloatingActionButton(
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -39,7 +43,7 @@ class niverPag extends StatelessWidget {
                   );
                 },
                 child: const Text('Voltar',
-                style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),
+                style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
                 ),
               ),
             ],

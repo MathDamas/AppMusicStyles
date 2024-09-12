@@ -6,6 +6,8 @@ void main() {
 }
 
 class historiaPag extends StatelessWidget {
+  const historiaPag({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,7 +16,7 @@ class historiaPag extends StatelessWidget {
         appBar: AppBar(
           title: const Text('História de São Paulo'),
           foregroundColor: Colors.white,
-          backgroundColor: Color.fromARGB(255, 81, 81, 81),
+          backgroundColor: const Color.fromARGB(255, 81, 81, 81),
         ),
         body: Center(
           child: Column(
@@ -39,7 +41,7 @@ class historiaPag extends StatelessWidget {
                   );
                 },
                 child: const Text('Voltar',
-                style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),
+                  style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
                 ),                
               ),
             ],
