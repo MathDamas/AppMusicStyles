@@ -1,3 +1,4 @@
+import 'package:app_flutter_music_styles/menu.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -41,8 +42,10 @@ class EventosPag extends StatelessWidget {
           // Define a cor de fundo da AppBar
           backgroundColor: const Color.fromARGB(255, 81, 81, 81),
         ),
+        
         // Corpo do Scaffold, define um GridView para mostrar as imagens
-        body: GridView.count(
+        body: 
+        GridView.count(
           // Define o número de colunas do GridView
           crossAxisCount: 2,
           // Gera uma lista de widgets filhos com base no índice
@@ -51,7 +54,7 @@ class EventosPag extends StatelessWidget {
               // Exibe uma imagem centralizada com AssetImage
               child: Image(
                 // Define a imagem a ser exibida a partir da lista de imagensEventos
-                image: AssetImage(imagensEventos[index % imagensEventos.length]),
+                image: AssetImage(imagensEventos[index]),
                 // Define como a imagem deve se ajustar ao espaço
                 fit: BoxFit.cover,
                 // Define a largura da imagem
@@ -59,10 +62,27 @@ class EventosPag extends StatelessWidget {
                 // Define a altura da imagem
                 height: 300,
               ),
+              
+
             );
           }),
+          
         ),
+        floatingActionButton: FloatingActionButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MenuPag()),
+                  );
+                },
+                child: const Text('Voltar',
+                  style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
+                ),                
+              ),
+              
       ),
-    );
+    )
+   // ))
+    ;
   }
 }
