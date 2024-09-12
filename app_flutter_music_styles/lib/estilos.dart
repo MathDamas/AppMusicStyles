@@ -51,7 +51,7 @@ class EstilosPag2 extends State<EstilosPag> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             // Primeiro botão em um Container
-            Container(
+            SizedBox(
               width: 300, // Largura do botão
               height: 50, // Altura do botão
               child: ElevatedButton(
@@ -68,11 +68,11 @@ class EstilosPag2 extends State<EstilosPag> {
                 // Define o estilo do ElevatedButton
                 style: ButtonStyle(
                   // Define a cor de fundo do botão
-                  backgroundColor: MaterialStateProperty.all<Color>(
+                  backgroundColor: WidgetStateProperty.all<Color>(
                       const Color.fromARGB(255, 244, 59, 46)),
                   // Define a cor do texto do botão
                   foregroundColor:
-                      MaterialStateProperty.all<Color>(Colors.white),
+                      WidgetStateProperty.all<Color>(Colors.white),
                 ),
                 // Texto do botão
                 child: const Text('Funk'),
@@ -81,7 +81,7 @@ class EstilosPag2 extends State<EstilosPag> {
             // Espaçamento entre os botões
             const SizedBox(height: 40),
             // Segundo botão em um Container
-            Container(
+            SizedBox(
               width: 300, // Largura do botão
               height: 50, // Altura do botão
               child: ElevatedButton(
@@ -101,11 +101,11 @@ class EstilosPag2 extends State<EstilosPag> {
                 // Define o estilo do ElevatedButton
                 style: ButtonStyle(
                   // Define a cor de fundo do botão
-                  backgroundColor: MaterialStateProperty.all<Color>(
+                  backgroundColor: WidgetStateProperty.all<Color>(
                       const Color.fromARGB(71, 128, 181, 63)),
                   // Define a cor do texto do botão
                   foregroundColor:
-                      MaterialStateProperty.all<Color>(Colors.white),
+                      WidgetStateProperty.all<Color>(Colors.white),
                 ),
                 // Texto do botão
                 child: const Text('Hip-hop'),
@@ -114,7 +114,7 @@ class EstilosPag2 extends State<EstilosPag> {
             // Espaçamento entre os botões
             const SizedBox(height: 40),
             // Terceiro botão em um Container
-            Container(
+            SizedBox(
               width: 300, // Largura do botão
               height: 50, // Altura do botão
               child: ElevatedButton(
@@ -134,11 +134,11 @@ class EstilosPag2 extends State<EstilosPag> {
                 // Define o estilo do ElevatedButton
                 style: ButtonStyle(
                   // Define a cor de fundo do botão
-                  backgroundColor: MaterialStateProperty.all<Color>(
+                  backgroundColor: WidgetStateProperty.all<Color>(
                       const Color.fromARGB(88, 59, 11, 224)),
                   // Define a cor do texto do botão
                   foregroundColor:
-                      MaterialStateProperty.all<Color>(Colors.white),
+                      WidgetStateProperty.all<Color>(Colors.white),
                 ),
                 // Texto do botão
                 child: const Text('Samba'),
@@ -147,7 +147,7 @@ class EstilosPag2 extends State<EstilosPag> {
             // Espaçamento entre os botões
             const SizedBox(height: 40),
             // Quarto botão em um Container
-            Container(
+            SizedBox(
               width: 300, // Largura do botão
               height: 50, // Altura do botão
               child: ElevatedButton(
@@ -167,11 +167,11 @@ class EstilosPag2 extends State<EstilosPag> {
                 // Define o estilo do ElevatedButton
                 style: ButtonStyle(
                   // Define a cor de fundo do botão
-                  backgroundColor: MaterialStateProperty.all<Color>(
+                  backgroundColor: WidgetStateProperty.all<Color>(
                       const Color.fromARGB(83, 212, 99, 199)),
                   // Define a cor do texto do botão
                   foregroundColor:
-                      MaterialStateProperty.all<Color>(Colors.white),
+                      WidgetStateProperty.all<Color>(Colors.white),
                 ),
                 // Texto do botão
                 child: const Text('Trap'),
@@ -180,7 +180,7 @@ class EstilosPag2 extends State<EstilosPag> {
             // Espaçamento entre os botões
             const SizedBox(height: 40),
             // Quinto botão em um Container
-            Container(
+            SizedBox(
               width: 300, // Largura do botão
               height: 50, // Altura do botão
               child: ElevatedButton(
@@ -200,11 +200,11 @@ class EstilosPag2 extends State<EstilosPag> {
                 // Define o estilo do ElevatedButton
                 style: ButtonStyle(
                   // Define a cor de fundo do botão
-                  backgroundColor: MaterialStateProperty.all<Color>(
+                  backgroundColor: WidgetStateProperty.all<Color>(
                       const Color.fromARGB(41, 101, 105, 102)),
                   // Define a cor do texto do botão
                   foregroundColor:
-                      MaterialStateProperty.all<Color>(Colors.white),
+                      WidgetStateProperty.all<Color>(Colors.white),
                 ),
                 // Texto do botão
                 child: const Text('Rock'),
@@ -213,7 +213,7 @@ class EstilosPag2 extends State<EstilosPag> {
             // Espaçamento entre os botões
             const SizedBox(height: 40),
             // Botão de voltar em um Container
-            Container(
+            SizedBox(
               width: 300, // Largura do botão
               height: 50, // Altura do botão
               child: ElevatedButton(
