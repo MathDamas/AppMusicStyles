@@ -6,13 +6,15 @@ import 'package:app_flutter_music_styles/niver.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MenuPag());
+  runApp(const MenuPag());
 }
 
 // COISAS DA TELA DE MENU
 
 // Define a classe MenuPag
 class MenuPag extends StatelessWidget {
+  const MenuPag({super.key});
+
   // Sobrescreve o método build que constrói a interface do usuário
   @override
   Widget build(BuildContext context) {
@@ -25,16 +27,16 @@ class MenuPag extends StatelessWidget {
         // Define uma AppBar na parte superior do Scaffold
         appBar: AppBar(
           // Define o título da AppBar com um texto
-          title: Text('Menu'),
+          title: const Text('Menu'),
           // Define a cor do texto da AppBar como branco
           foregroundColor: Colors.white,
           // Define a cor de fundo da AppBar
-          backgroundColor: Color.fromARGB(255, 81, 81, 81),
+          backgroundColor: const Color.fromARGB(255, 81, 81, 81),
         ),
         // Corpo do Scaffold, centraliza o widget filho
         body: Center(
           // Define um Container para controlar as dimensões do GridView
-          child: Container(
+          child: SizedBox(
             width: 300, // Largura do Container
             height: 300, // Altura do Container
             // Define um GridView com 2 colunas
@@ -48,13 +50,13 @@ class MenuPag extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => niverPag()),
+                      MaterialPageRoute(builder: (context) => const NiverPag()),
                     );
                   },
                   // Define o estilo do ElevatedButton
                   style: ElevatedButton.styleFrom(
                       foregroundColor: Colors.white, // Cor do texto
-                      backgroundColor: Color.fromARGB(169, 249, 54, 10), // Cor de fundo
+                      backgroundColor: const Color.fromARGB(169, 249, 54, 10), // Cor de fundo
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30), // Bordas arredondadas
                       ),
@@ -62,7 +64,7 @@ class MenuPag extends StatelessWidget {
                         fontSize: 20, // Tamanho da fonte
                       )),
                   // Texto do botão
-                  child: Text("Aniversário"),
+                  child: const Text("Aniversário"),
                 ),
                 // Segundo botão
                 ElevatedButton(
@@ -70,12 +72,12 @@ class MenuPag extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => historiaPag()),
+                      MaterialPageRoute(builder: (context) => const HistoriaPag()),
                     );
                   },
                   // Define o estilo do ElevatedButton
                   style: ElevatedButton.styleFrom(
-                      backgroundColor: Color.fromARGB(169, 229, 31, 209), // Cor de fundo
+                      backgroundColor: const Color.fromARGB(169, 229, 31, 209), // Cor de fundo
                       foregroundColor: Colors.white, // Cor do texto
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30), // Bordas arredondadas
@@ -84,7 +86,7 @@ class MenuPag extends StatelessWidget {
                         fontSize: 20, // Tamanho da fonte
                       )),
                   // Texto do botão
-                  child: Text("História"),
+                  child: const Text("História"),
                 ),
                 // Terceiro botão
                 ElevatedButton(
@@ -99,12 +101,12 @@ class MenuPag extends StatelessWidget {
                         fontSize: 20, // Tamanho da fonte
                       )),
                   // Texto do botão
-                  child: Text("Estilos"),
+                  child: const Text("Estilos"),
                   // Define a ação ao pressionar o botão
                   onPressed: () {
                     // Navega para a página EstilosPag e substitui a rota atual
                     Navigator.of(context).pushReplacement(
-                      MaterialPageRoute(builder: (context) => EstilosPag()),
+                      MaterialPageRoute(builder: (context) => const EstilosPag()),
                     );
                   },
                 ),
@@ -129,7 +131,7 @@ class MenuPag extends StatelessWidget {
                         fontSize: 20, // Tamanho da fonte
                       )),
                   // Texto do botão
-                  child: Text("Eventos"),
+                  child: const Text("Eventos"),
                 ),
                 // Quinto botão
                 ElevatedButton(
@@ -149,7 +151,7 @@ class MenuPag extends StatelessWidget {
                     );
                   },
                   // Texto do botão
-                  child: Text("Voltar"),
+                  child: const Text("Voltar"),
                 ),
               ],
             ),

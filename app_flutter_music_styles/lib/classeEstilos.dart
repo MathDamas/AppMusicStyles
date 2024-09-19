@@ -1,6 +1,7 @@
 // Criação da classe geral para os estilos
 
 class EstilosMusc{
+  // ignore: non_constant_identifier_names
   final String imagemMusc;
   // Definição do atributo para o nome do estilo
   final String nomeMusc;

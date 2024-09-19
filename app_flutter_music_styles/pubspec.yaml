@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  url_launcher: ^6.3.0
 
 dev_dependencies:
   flutter_test:
@@ -18,6 +19,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
+  - img/
   - img/funk1.jpg
   - img/funk2.jpg
   - img/funk3.avif

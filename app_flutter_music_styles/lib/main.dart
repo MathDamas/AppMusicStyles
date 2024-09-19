@@ -53,6 +53,7 @@ class MainApp extends StatelessWidget {
                   child: const Text('Conhecer'),
                   onPressed: () {
                     Navigator.of(context).pushReplacement(
+                      // ignore: prefer_const_constructors
                       MaterialPageRoute(builder: (context) => MenuPag()),
                     );
                   },

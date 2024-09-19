@@ -2,15 +2,20 @@ import 'package:app_flutter_music_styles/TesteDados.dart';
 import 'package:app_flutter_music_styles/classeEstilos.dart';
 import 'package:app_flutter_music_styles/menu.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() {
   runApp(const EstilosPag());
 }
 
+final Uri _urlYoutube = Uri.parse('https://www.portalinsights.com.br/perguntas-frequentes/qual-e-o-estilo-de-musica-de-sao-paulo');
+
 // Define a classe EstilosPag
 class EstilosPag extends StatefulWidget {
   // Construtor constante da classe EstilosPag, que aceita uma chave super.key
   const EstilosPag({super.key});
+
+
 
   // Sobrescreve o método createState para retornar uma instância de EstilosPag2
   @override
@@ -18,6 +23,7 @@ class EstilosPag extends StatefulWidget {
 }
 
 class EstilosPag2 extends State<EstilosPag> {
+  
   EstilosMusc f =
       const EstilosMusc('', 'Funk Brasileiro', 'Surgimento: Final da década de 60', 'Cantores: Anitta, Ludmilla e Kevinho');
   EstilosMusc h = const EstilosMusc('', 'HipHop Brasileiro', 'Surgimento: Em 1988', 'Cantores: Emicida, Rael e Karol Conká');
@@ -27,6 +33,12 @@ class EstilosPag2 extends State<EstilosPag> {
   EstilosMusc r = const EstilosMusc('', 'Rock Brasileiro', 'Surgimento: Década de 59', 'Cantores: Legião Urbana, Titâs e Pitty');
 
 // Define a classe EstilosPag que herda de StatelessWidget
+
+//Para viajar para outra página
+  Future<void> _launchUrl() async {
+   if (!await launchUrl(_urlYoutube)) {
+        throw Exception('Could not launch $_urlYoutube');
+    }}
 
   // Sobrescreve o método build que constrói a interface do usuário
   @override
@@ -141,7 +153,7 @@ class EstilosPag2 extends State<EstilosPag> {
                       WidgetStateProperty.all<Color>(Colors.white),
                 ),
                 // Texto do botão
-                child: const Text('Samba'),
+                child: Text(s.nomeMusc),
               ),
             ),
             // Espaçamento entre os botões
@@ -183,6 +195,7 @@ class EstilosPag2 extends State<EstilosPag> {
             SizedBox(
               width: 300, // Largura do botão
               height: 50, // Altura do botão
+                           
               child: ElevatedButton(
                 // Define a ação ao pressionar o botão (vazio)
                 onPressed: () {
@@ -211,6 +224,7 @@ class EstilosPag2 extends State<EstilosPag> {
               ),
             ),
             // Espaçamento entre os botões
+
             const SizedBox(height: 40),
             // Botão de voltar em um Container
             SizedBox(
@@ -233,13 +247,25 @@ class EstilosPag2 extends State<EstilosPag> {
                   // Navega para a página MenuPag
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => MenuPag()),
+                    MaterialPageRoute(builder: (context) => const MenuPag()),
                   );
                 },
                 // Texto do botão
                 child: const Text("Voltar"),
               ),
-            )
+            ),
+
+            const SizedBox(height:40),
+            SizedBox(
+         child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            foregroundColor: Colors.black,
+                          ),
+              onPressed: _launchUrl,
+              child: const 
+              Text('Saiba mais sobre os estilos!'),
+         ),
+            ),
           ],
         ),
       ),

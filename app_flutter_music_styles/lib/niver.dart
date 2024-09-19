@@ -2,11 +2,11 @@ import 'package:app_flutter_music_styles/menu.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(niverPag());
+  runApp(const NiverPag());
 }
 
-class niverPag extends StatelessWidget {
-  const niverPag({super.key});
+class NiverPag extends StatelessWidget {
+  const NiverPag({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +39,7 @@ class niverPag extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => MenuPag()),
+                    MaterialPageRoute(builder: (context) => const MenuPag()),
                   );
                 },
                 child: const Text('Voltar',

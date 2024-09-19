@@ -2,11 +2,11 @@ import 'package:app_flutter_music_styles/menu.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(historiaPag());
+  runApp(const HistoriaPag());
 }
 
-class historiaPag extends StatelessWidget {
-  const historiaPag({super.key});
+class HistoriaPag extends StatelessWidget {
+  const HistoriaPag({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +37,7 @@ class historiaPag extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => MenuPag()),
+                    MaterialPageRoute(builder: (context) => const MenuPag()),
                   );
                 },
                 child: const Text('Voltar',

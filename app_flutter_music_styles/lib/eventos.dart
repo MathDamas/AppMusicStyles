@@ -72,7 +72,7 @@ class EventosPag extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => MenuPag()),
+                    MaterialPageRoute(builder: (context) => const MenuPag()),
                   );
                 },
                 child: const Text('Voltar',
