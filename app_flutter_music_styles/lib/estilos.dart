@@ -15,8 +15,6 @@ class EstilosPag extends StatefulWidget {
   // Construtor constante da classe EstilosPag, que aceita uma chave super.key
   const EstilosPag({super.key});
 
-
-
   // Sobrescreve o método createState para retornar uma instância de EstilosPag2
   @override
   State<EstilosPag> createState() => EstilosPag2();
@@ -24,13 +22,11 @@ class EstilosPag extends StatefulWidget {
 
 class EstilosPag2 extends State<EstilosPag> {
   
-  EstilosMusc f =
-      const EstilosMusc('', 'Funk Brasileiro', 'Surgimento: Final da década de 60', 'Cantores: Anitta, Ludmilla e Kevinho');
-  EstilosMusc h = const EstilosMusc('', 'HipHop Brasileiro', 'Surgimento: Em 1988', 'Cantores: Emicida, Rael e Karol Conká');
-  EstilosMusc s =
-      const EstilosMusc('', 'Samba', 'Surgimento: Início do Século 20', 'Cantores: Martinho da Vila, Alcione e Zeca Pagodinho');
-  EstilosMusc t = const EstilosMusc('', 'Trap Brasileiro', 'Surgimento: Em 1999', 'Cantores: Matuê, Sidoka e Delacruz');
-  EstilosMusc r = const EstilosMusc('', 'Rock Brasileiro', 'Surgimento: Década de 59', 'Cantores: Legião Urbana, Titâs e Pitty');
+  EstilosMusc f = const EstilosMusc('img/funkestilos.jpg', 'Funk Brasileiro', 'Surgimento: Final da década de 60', 'Cantores: Anitta, Ludmilla e Kevinho');
+  EstilosMusc h = const EstilosMusc('img/hiphopestilos.jpg', 'HipHop Brasileiro', 'Surgimento: Em 1988', 'Cantores: Emicida, Rael e Karol Conká');
+  EstilosMusc s = const EstilosMusc('img/sambaestilos.jpg', 'Samba', 'Surgimento: Início do Século 20', 'Cantores: Martinho da Vila, Alcione e Zeca Pagodinho');
+  EstilosMusc t = const EstilosMusc('img/trapestilos.jpg', 'Trap Brasileiro', 'Surgimento: Em 1999', 'Cantores: Matuê, Sidoka e Delacruz');
+  EstilosMusc r = const EstilosMusc('img/rockestilos.jpg', 'Rock Brasileiro', 'Surgimento: Década de 59', 'Cantores: Legião Urbana, Titâs e Pitty');
 
 // Define a classe EstilosPag que herda de StatelessWidget
 
@@ -75,7 +71,7 @@ class EstilosPag2 extends State<EstilosPag> {
                           builder: (context) => const TesteDados(),
                           settings: RouteSettings(
                             arguments: f,
-                          )));
+                    )));
                 },
                 // Define o estilo do ElevatedButton
                 style: ButtonStyle(
@@ -194,8 +190,7 @@ class EstilosPag2 extends State<EstilosPag> {
             // Quinto botão em um Container
             SizedBox(
               width: 300, // Largura do botão
-              height: 50, // Altura do botão
-                           
+              height: 50, // Altura do botão                           
               child: ElevatedButton(
                 // Define a ação ao pressionar o botão (vazio)
                 onPressed: () {
@@ -224,7 +219,6 @@ class EstilosPag2 extends State<EstilosPag> {
               ),
             ),
             // Espaçamento entre os botões
-
             const SizedBox(height: 40),
             // Botão de voltar em um Container
             SizedBox(
@@ -254,19 +248,18 @@ class EstilosPag2 extends State<EstilosPag> {
                 child: const Text("Voltar"),
               ),
             ),
-
             const SizedBox(height:40),
             SizedBox(
-         child: ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                            foregroundColor: Colors.black,
-                          ),
+              child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                  foregroundColor: Colors.black,
+                  ),
               onPressed: _launchUrl,
               child: const 
               Text('Saiba mais sobre os estilos!'),
-         ),
             ),
-          ],
+          ),
+        ],
         ),
       ),
     );

@@ -36,21 +36,21 @@ class TesteDados extends StatelessWidget {
             Text(
               e.nomeMusc,
               style: const TextStyle(
-                  fontSize: 20,
+                  fontSize: 30,
                   fontFamily: 'Times New Roman',
                   color: Color.fromARGB(255, 255, 255, 255)),
             ),
             Text(
               e.dataMusc,
               style: const TextStyle(
-                  fontSize: 20,
+                  fontSize: 30,
                   fontFamily: 'Times New Roman',
                   color: Color.fromARGB(255, 255, 255, 255)),
             ),
             Text(
               e.exemploMusc,
               style: const TextStyle(
-                  fontSize: 20,
+                  fontSize: 30,
                   fontFamily: 'Times New Roman',
                   color: Color.fromARGB(255, 255, 255, 255)),
             ),

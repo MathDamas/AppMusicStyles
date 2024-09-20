@@ -41,8 +41,7 @@ class EventosPag extends StatelessWidget {
           foregroundColor: Colors.white,
           // Define a cor de fundo da AppBar
           backgroundColor: const Color.fromARGB(255, 81, 81, 81),
-        ),
-        
+        ),        
         // Corpo do Scaffold, define um GridView para mostrar as imagens
         body: 
         GridView.count(
@@ -62,11 +61,8 @@ class EventosPag extends StatelessWidget {
                 // Define a altura da imagem
                 height: 300,
               ),
-              
-
             );
-          }),
-          
+          }),          
         ),
         floatingActionButton: FloatingActionButton(
                 onPressed: () {
@@ -78,8 +74,7 @@ class EventosPag extends StatelessWidget {
                 child: const Text('Voltar',
                   style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
                 ),                
-              ),
-              
+              ),              
       ),
     )
    // ))
